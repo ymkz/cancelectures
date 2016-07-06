@@ -1,0 +1,53 @@
+html,
+body,
+#field {
+  margin: 0;
+  height: auto;
+  width: 380px;
+}
+
+label {
+  font-size: 120%;
+  background: #FFF;
+  color: #000;
+  padding: 5px 10px;
+  display: block;
+  margin: 3px 0;
+  border-left: 5px solid #000;
+  border-bottom: 1px solid #000;
+}
+  
+input[type="checkbox"].on-off{
+  display: none;
+}
+
+#field ul {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#field li {
+  margin-left: 26px;
+  padding: 5px 0;
+  border-bottom: 1px solid #000;
+}
+
+input[type="checkbox"].on-off + ul{
+  height: 0;
+  overflow: hidden;
+}
+
+input[type="checkbox"].on-off:checked + ul{
+  height: 232px;
+}
+
+.error {
+  margin-top: 200px;
+}
+

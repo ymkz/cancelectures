@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ymkz">
+    <title>Cancelectures</title>
+    <link rel="stylesheet" type="text/css" href="css/options.css">
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+  </head>
+
+  <body>
+  
+    <div class="wrapper">
+      <div class="information">
+        <h2>Cancelectures README</h2>
+  
+        <h3>About</h3>
+          <p><strong>島根大学</strong>の休講情報を取得して、整えて表示するだけのChrome Extensionです.</p>
+          <p>直近の休講情報が上からリストとして並んでいます.</p>
+          <p>リストの部分をクリックすることで詳細情報を展開して表示します.</p>
+
+        <h3>Attention</h3>
+          <p>この拡張機能をインストール/使用によっていかなる不具合が生じたとしても開発者は一切の責任を負いません.</p>
+          <p>この拡張機能を信頼できると判断した場合に限り, 各々の責任のもとにインストール/使用して下さい.</p>
+          <br>
+          <p>更新を保存したりという機能は実装されていないので、拡張機能を開く度に大学の休講情報を取得しにいきます.</p>  
+          <p>そのため連続での使用や、多大な負荷を掛けるような使い方は控えるようにして下さい.</p>  
+
+        <h3>Design</h3>
+          <p>色付けによって授業の分類を視覚的に理解しやすくしています.</p>
+          <ul>
+            <li>教養： <span class="culture">#8BC34A</span></li>
+            <li>医学部： <span class="medic">#607D8B</span></li>
+            <li>法文学部： <span class="law">#F44336</span></li>
+            <li>教育学部： <span class="education">#2196F3</span></li>
+            <li>総合理工学部： <span class="engineering">#9C27B0</span></li>
+            <li>生物資源科学部： <span class="biology">#FF9800</span></li>
+          </ul>
+
+        <h3>Thanks</h3>
+          <p>Technical support: <a href="https://github.com/naoya3e">naoya3e</a></p>
+      </div> <!-- information -->
+
+      <div class="option">
+        <h2>Option</h2>
+        <form name="option_form" action="">
+          <p>表示する学部を指定することができます.<br>表示が必要な学部にチェックを入れてください.<br>デフォルトでは全学部を表示します.</p>
+          <br>
+          <input type="checkbox" id="culture"><label for="culture">教養</label><br>
+          <input type="checkbox" id="medic"><label for="medic">医学部</label><br>
+          <input type="checkbox" id="law"><label for="law">法文学部</label><br>
+          <input type="checkbox" id="education"><label for="education">教育学部</label><br>
+          <input type="checkbox" id="engineering"><label for="engineering">総合理工学部</label><br>
+          <input type="checkbox" id="biology"><label for="biology">生物資源科学部</label><br>
+          <br>
+          <input type="button" id="save" value="保存"><br>
+        </form>
+      </div> <!-- option -->
+
+    </div> <!-- wrapper -->
+
+
+    <footer>
+      <div class="signature">
+        <p>Twitter: <a href="https://twitter.com/ymkzly" "@ymkz" class="white">@ymkzly</a></p>
+        <p>Github:  <a href="https://github.com/ymkz" "ymkz" class="white">ymkz</a></p>
+        <p>E-mail:  ymkzly@gmail.com</p>
+      </div>
+    </footer>
+  
+  <!-- User Script -->
+  <script type="text/javascript" src="js/options.js"></script>
+  </body>
+</html>
